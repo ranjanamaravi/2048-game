@@ -1,4 +1,3 @@
-# import ttkbootstrap as ttk
 import tkinter as tk
 import logicsFinal
 import constants as c
