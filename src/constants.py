@@ -21,8 +21,8 @@ CELL_COLOR_DICT = {2:'#776e65', 4:'#776e65', 8:'#f9f6f2', 16:'#f9f6f2',
 
 FONT = ('verdana', 40, 'bold')
 
-KEY_UP = '8'
-KEY_DOWN = '2'
-KEY_LEFT = '4'
-KEY_RIGHT = '6'
+KEY_UP = 'Up'
+KEY_DOWN = 'Down'
+KEY_LEFT = 'Left'
+KEY_RIGHT = 'Right'
 

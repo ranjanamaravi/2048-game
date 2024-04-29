@@ -10,7 +10,7 @@ class Game2048(tk.Tk):
         self.geometry(f'{c.SIZE}x{c.SIZE}')
         self.resizable(False, False)
         self.bind("<KeyPress>", self.key_down)
-        self.commands = {c. KEY_UP: logicsFinal.move_up, c.KEY_DOWN: logicsFinal.move_down,
+        self.commands = {c.KEY_UP: logicsFinal.move_up, c.KEY_DOWN: logicsFinal.move_down,
                          c.KEY_LEFT: logicsFinal.move_left, c.KEY_RIGHT: logicsFinal.move_right}
         
         self.grid_cells = []
@@ -63,7 +63,8 @@ class Game2048(tk.Tk):
         self.update()
 
     def key_down(self, event):
-        key = event.char
+        key = event.keysym
+        print("key", key)
         if key in self.commands:
             self.matrix, changed = self.commands[key](self.matrix)           
             if changed:
